@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  :focus, :active {
+    outline: none; }
+  
+  a:focus, a:active {
+    outline: none;
+  }
+  
+  nav, footer, header, aside {
+    display: block;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  input, button, textarea {
+    font-family: inherit;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  a, a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  /* ---------- header ---------- */
+
+  .firstSection {
+    display: grid;
+    grid-template: repeat(5, 100px) / repeat(1, 1fr);
+    background: url("/img/card-img.png") no-repeat 100% 100%, linear-gradient(144deg, #190422 21.1%, #190422 102.96%);
+}
+header{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+    .firstSpan {
+        padding: 1rem;
+        font-size: 54px;
+        font-weight: 600;
+        flex: 0 1 30%;
+    }
+
+    .firstSpan > strong{
+        color: #BC8AFC;
+    }
+
+    .firstNav__list {
+        display: flex;
+        align-items: baseline;
+        flex: 1 1 auto;
+        justify-content: space-around;
+    }
+    .firstNav__list_listItem {
+        font-weight: 300;
+    }
+    .firstNav__list_btn {
+        background-color: #BC8AFC;
+        padding: 5px 20px;
+        border-radius: 7px;
+    }
+
+    .firstSection__budgetPlanBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        padding-left: 1rem;
+        grid-row: 2 / 4;
+        color: #FFF;
+    }
+    .firstSection__budgetPlanBlock_h1 {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    .firstSection__budgetPlanBlock_btn {
+        border-radius: 7px;
+        background-color: #BC8AFC;
+        padding: 7px 20px;
+    }
+    .statisticBlock{
+        position: relative;
+        top: 35%;
+        display: flex;
+        grid-row:5;
+        border-radius: 16px;
+        background: #FFF;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+        justify-content: space-around;
+        margin: 0 1rem;
+        align-items: center;
+    }
+
+    .statisticBlock__item span{
+        color: #1F262E;
+        font-size: 38px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .statisticBlock__item span > strong{
+        color: #BC8AFC;
+    }
+
+    .statisticBlock__item p{
+    color: #1F262E;
+    font-size: 16px;
+    }
