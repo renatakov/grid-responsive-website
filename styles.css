@@ -164,10 +164,357 @@ header{
     .secondSection{
       display: flex;
       align-items: center;
-      justify-content: center;
-      margin-top: 5rem;
+      justify-content: space-around;
+      background: url("/img/Group\ 33.png") no-repeat;
     }
 
     .secondSection > img{
+      /* flex: 0 1 40%; */
+      max-width: 100%;
+      height: 500px;
+      object-fit: contain;
+    }
+
+    .secondSection__firstBlock{
+      display: flex;
+      flex-flow: row wrap;
+      flex: 0 1 50%;
+      row-gap: 20px;
       
     }
+    
+    .secondSection__firstBlock > h1{
+      flex: 0 1 90%;
+      font-size: 38px;
+font-weight: 600;
+line-height: 100%;
+align-self: baseline;
+    }
+
+    .secondSection__firstBlock > p{
+      /* margin-top: 1rem; */
+      font-size: 20px;
+line-height: 158%;
+    }
+    .secondSection__firstBlock_btn{
+      align-self: start;
+      /* margin-top: 1rem; */
+    }
+
+    .thirdSection{
+      margin: 80px 0 0 80px;
+      background: linear-gradient(124deg, white 90%, rgb(134, 181, 210));
+    }
+
+    .thirdSection > h1{
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 158%;
+    }
+
+    .thirdSection__container{
+      display: grid;
+      grid-template: repeat(2, 300px) / repeat(2, 1fr);
+      gap: 20px;
+    }
+    
+
+    .thirdSection__item > img{
+      background-color: #33163f;
+      padding: 7px;
+      border-radius: 37%;
+      object-fit: contain;
+      width: 60px;
+      height: 60px;
+    }
+
+    .thirdSection__item > h3{
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 158%;
+    }
+
+    .thirdSection__item{
+      font-size: 20px;
+      line-height: 158%; 
+    }
+
+    .fourthSection{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background: url("/img/Group\ 33.png") no-repeat;
+      background-size: contain;
+    }
+
+    .fourthSection > img{
+      max-width: 100%;
+      height: 500px;
+      object-fit: contain;
+    }
+
+    .fourthSection__firstBlock{
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      flex: 0 1 50%;
+    }
+
+    .fourthSection__firstBlock > h2{
+      font-size: 48px;
+      font-weight: 600;
+line-height: 130.5%;
+    }
+
+    .fourthSection__firstBlock > p{
+      font-size: 20px;
+line-height: 158%
+    }
+
+    .fourthSection__firstBlock_list{
+      margin-left: 3rem;
+    }
+
+    .fourthSection__firstBlock_listItem{
+      list-style-image: url("/img/list-svg.svg");
+      font-size: 20px;
+    }
+
+    footer{
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 4rem;
+    color: aliceblue;
+      background-color: rgba(25, 4, 34, 1);
+    }
+
+
+    .mail__block > h4{
+      font-weight: 300;
+    }
+
+    .mail__block > input{
+      color:#736D6D;
+      padding: 13px;
+      border-radius: 5px;
+    }
+    .mail__block > button{
+      position: relative;
+      top: 0;
+      left: -10%;
+      background-color: #BC8AFC;
+      padding: 13px 25px;
+      border-radius: 5px;
+
+    }
+    .img__block{
+      display: flex;
+      
+      align-items: center;
+      column-gap: 20px;
+      
+    }
+
+    footer ul{
+      display: flex;
+      align-items: baseline;
+      
+      justify-content: space-between;
+    }
+
+
+
+    footer ul li{
+      font-size: 18px;
+      font-weight: 300;
+      margin-right: 1rem;
+    }
+
+    .footerSpan {
+      
+      font-size: 54px;
+      font-weight: 600;
+  }
+
+  .footerSpan > strong{
+      color: #BC8AFC;
+  }
+
+  .menu__button:hover{
+    transform: scale(1.2);
+  }
+
+  .menu__burger{
+    display: none;
+    position: relative;
+    top: -9%;
+  }
+  .menu__burger span{
+    margin-bottom: 5px;
+    border-radius: 2px;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  @media (min-width: 768px) and (max-width: 834px) {
+    .secondSection{
+      margin-top: 3rem;
+    }
+    .fourthSection{
+      background-position: 70% 45%;
+    }
+
+    .fourthSection > img{
+      height: 400px;
+    }
+
+    .fourthSection__firstBlock{
+      justify-content: center;
+    }
+
+    .fourthSection__firstBlock > h2{
+      font-size: 32px;
+    }
+
+    .fourthSection__firstBlock > p{
+      font-size: 16px;
+    }
+
+    .fourthSection__firstBlock_listItem{
+      font-size: 16px;
+    }
+    
+      footer ul{
+        display: flex;
+        flex-direction: column;
+      }
+    
+  }
+
+  @media (min-width: 320px) and (max-width: 450px) {
+    header{
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 1.1rem;
+    }
+    .firstNav__list{
+      display: none;
+    }
+    .firstSpan{
+      font-size: 30px;
+      padding: 0;
+      flex: 0 1 80%;
+    }
+    .menu__burger{
+      display: flex;
+      flex-direction: column;
+    }
+    /* input{
+      display: flex;
+      opacity: 0;
+    } */
+    .firstSection{
+    grid-template: repeat(6, 100px) / repeat(1, 1fr);
+
+      background-position: 20% 100%;
+      background-size: contain;
+      
+    }
+    .firstSection__budgetPlanBlock_h1 {
+      font-size: 30px;
+  }
+  .statisticBlock{
+    position: relative;
+
+    top: 120%;
+
+}
+
+.secondSection{
+  margin-top: 2rem;
+  flex-direction: column;
+  background-position: 0% 0%;
+  background-size: contain;
+}
+
+.secondSection > img{
+  height: 300px;
+}
+
+.secondSection__firstBlock{
+  margin-left: 2rem;
+}
+
+.secondSection__firstBlock > h1{
+  font-size: 32px;
+}
+
+.secondSection__firstBlock > p{
+  font-size: 16px;
+}
+.thirdSection,
+.fourthSection{
+  margin: 2rem 0 2rem 2rem;
+}
+
+.thirdSection > h1{
+  font-size: 32px;
+}
+
+.thirdSection__container{
+  grid-template-columns: 1fr;
+}
+
+.fourthSection{
+  flex-direction: column;
+  background: none;
+  
+}
+
+.fourthSection > img{
+  display: none;
+}
+
+.fourthSection__firstBlock > h2{
+  font-size: 32px;
+}
+
+.fourthSection__firstBlock > p,
+.fourthSection__firstBlock_listItem{
+  font-size: 16px;
+}
+footer{
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+
+.footerSpan{
+  font-size: 32px;
+}
+
+footer ul{
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.img__block{
+  margin-top: 10px;
+}
+
+.mail__block{
+  display: flex;
+  flex-direction: column;
+row-gap: 10px;
+}
+
+.mail__block > button{
+  left: 0;
+}
+
+  }
